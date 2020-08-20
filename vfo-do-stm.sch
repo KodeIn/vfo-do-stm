@@ -664,7 +664,7 @@ U 1 1 5F4C4779
 P 10700 750
 F 0 "J1" V 10664 462 50  0000 R CNN
 F 1 "SWIM" V 10573 462 50  0000 R CNN
-F 2 "Connector_Molex:Molex_KK-254_AE-6410-04A_1x04_P2.54mm_Vertical" H 10700 750 50  0001 C CNN
+F 2 "Connector_JST:JST_ZH_B4B-ZR_1x04_P1.50mm_Vertical" H 10700 750 50  0001 C CNN
 F 3 "~" H 10700 750 50  0001 C CNN
 	1    10700 750 
 	0    -1   -1   0   
@@ -828,7 +828,7 @@ U 1 1 5F6781E5
 P 3350 7300
 F 0 "J4" V 3232 7400 50  0000 L CNN
 F 1 "VFO" V 3323 7400 50  0000 L CNN
-F 2 "Connector_Coaxial:SMA_Molex_73251-2200_Horizontal" H 3350 7300 50  0001 C CNN
+F 2 "Connector_Coaxial:SMA_Molex_73251-2120_EdgeMount_Horizontal" H 3350 7300 50  0001 C CNN
 F 3 " ~" H 3350 7300 50  0001 C CNN
 	1    3350 7300
 	0    1    1    0   
@@ -839,7 +839,7 @@ U 1 1 5F678EA6
 P 2600 7300
 F 0 "J3" H 2700 7275 50  0000 L CNN
 F 1 "LO" H 2700 7184 50  0000 L CNN
-F 2 "Connector_Coaxial:SMA_Molex_73251-2200_Horizontal" H 2600 7300 50  0001 C CNN
+F 2 "Connector_Coaxial:SMA_Molex_73251-2120_EdgeMount_Horizontal" H 2600 7300 50  0001 C CNN
 F 3 " ~" H 2600 7300 50  0001 C CNN
 	1    2600 7300
 	0    1    1    0   
@@ -1015,7 +1015,7 @@ U 1 1 5F8AFC3C
 P 1650 1000
 F 0 "D1" H 1650 783 50  0000 C CNN
 F 1 "D_Schottky" H 1650 874 50  0000 C CNN
-F 2 "Diode_SMD:D_0805_2012Metric_Pad1.15x1.40mm_HandSolder" H 1650 1000 50  0001 C CNN
+F 2 "Diode_SMD:D_SMA-SMB_Universal_Handsoldering" H 1650 1000 50  0001 C CNN
 F 3 "~" H 1650 1000 50  0001 C CNN
 	1    1650 1000
 	-1   0    0    1   
@@ -1029,4 +1029,6 @@ Wire Wire Line
 Wire Wire Line
 	1350 1000 1500 1000
 Connection ~ 1350 1000
+Text Label 3250 1000 0    50   ~ 0
+Net_5.5V
 $EndSCHEMATC
