@@ -464,7 +464,7 @@ Text GLabel 6000 1000 2    50   Input ~ 0
 Text GLabel 6000 2350 2    50   Input ~ 0
 3.3LCD
 Text GLabel 6000 3700 2    50   Input ~ 0
-3.3GPS
+3.3CLK
 Wire Wire Line
 	6000 2350 5500 2350
 Connection ~ 5500 2350
@@ -475,7 +475,7 @@ Wire Wire Line
 	6000 1000 5500 1000
 Connection ~ 5500 1000
 Text GLabel 4000 3900 3    50   Output ~ 0
-SHTDWN_GPS
+SHTDWN_CLK
 Wire Wire Line
 	3500 3700 4100 3700
 Wire Wire Line
@@ -483,7 +483,7 @@ Wire Wire Line
 Wire Wire Line
 	4000 3800 4000 3900
 Text GLabel 10000 2200 2    50   Input ~ 0
-SHTDWN_GPS
+SHTDWN_CLK
 Wire Wire Line
 	10000 2200 9850 2200
 Wire Wire Line
@@ -618,7 +618,7 @@ $EndComp
 Wire Wire Line
 	1950 7050 2000 7000
 Text GLabel 1600 5900 0    50   Output ~ 0
-3.3MCU
+3.3CLK
 $Comp
 L Device:C_Small C14
 U 1 1 5F489362
@@ -837,8 +837,8 @@ $Comp
 L Connector:Conn_Coaxial J3
 U 1 1 5F678EA6
 P 2600 7300
-F 0 "J3" H 2700 7275 50  0000 L CNN
-F 1 "LO" H 2700 7184 50  0000 L CNN
+F 0 "J3" V 2482 7401 50  0000 L CNN
+F 1 "LO" V 2573 7401 50  0000 L CNN
 F 2 "Connector_Coaxial:SMA_Molex_73251-2120_EdgeMount_Horizontal" H 2600 7300 50  0001 C CNN
 F 3 " ~" H 2600 7300 50  0001 C CNN
 	1    2600 7300
@@ -1031,4 +1031,15 @@ Wire Wire Line
 Connection ~ 1350 1000
 Text Label 3250 1000 0    50   ~ 0
 Net_5.5V
+$Comp
+L Connector_Generic:Conn_01x24 J5
+U 1 1 5F3F08EC
+P 5950 6150
+F 0 "J5" H 6030 6142 50  0000 L CNN
+F 1 "Display" H 6030 6051 50  0000 L CNN
+F 2 "Connector_FFC-FPC:Molex_52435-2433_1x24-1MP_P0.5mm_Horizontal_TopContact" H 5950 6150 50  0001 C CNN
+F 3 "~" H 5950 6150 50  0001 C CNN
+	1    5950 6150
+	1    0    0    -1  
+$EndComp
 $EndSCHEMATC
