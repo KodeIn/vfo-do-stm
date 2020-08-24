@@ -1,0 +1,147 @@
+EESchema Schematic File Version 4
+EELAYER 30 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 4 4
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L Switch:SW_Push SW?
+U 1 1 5F584316
+P 7550 3000
+F 0 "SW?" H 7550 3285 50  0000 C CNN
+F 1 "BP1" H 7550 3194 50  0000 C CNN
+F 2 "Button_Switch_SMD:SW_SPST_B3S-1000" H 7550 3200 50  0001 C CNN
+F 3 "~" H 7550 3200 50  0001 C CNN
+	1    7550 3000
+	1    0    0    -1  
+$EndComp
+$Comp
+L Switch:SW_Push SW?
+U 1 1 5F58431C
+P 7550 3500
+F 0 "SW?" H 7550 3785 50  0000 C CNN
+F 1 "BP2" H 7550 3694 50  0000 C CNN
+F 2 "Button_Switch_SMD:SW_SPST_B3S-1000" H 7550 3700 50  0001 C CNN
+F 3 "~" H 7550 3700 50  0001 C CNN
+	1    7550 3500
+	1    0    0    -1  
+$EndComp
+$Comp
+L Switch:SW_Push SW?
+U 1 1 5F584322
+P 7550 4000
+F 0 "SW?" H 7550 4285 50  0000 C CNN
+F 1 "BP3" H 7550 4194 50  0000 C CNN
+F 2 "Button_Switch_SMD:SW_SPST_B3S-1000" H 7550 4200 50  0001 C CNN
+F 3 "~" H 7550 4200 50  0001 C CNN
+	1    7550 4000
+	1    0    0    -1  
+$EndComp
+$Comp
+L Switch:SW_Push SW?
+U 1 1 5F584328
+P 7550 4500
+F 0 "SW?" H 7550 4785 50  0000 C CNN
+F 1 "BP4" H 7550 4694 50  0000 C CNN
+F 2 "Button_Switch_SMD:SW_SPST_B3S-1000" H 7550 4700 50  0001 C CNN
+F 3 "~" H 7550 4700 50  0001 C CNN
+	1    7550 4500
+	1    0    0    -1  
+$EndComp
+$Comp
+L Switch:SW_Push SW?
+U 1 1 5F58432E
+P 7550 2500
+F 0 "SW?" H 7550 2785 50  0000 C CNN
+F 1 "SW_NRST" H 7550 2694 50  0000 C CNN
+F 2 "Button_Switch_SMD:SW_SPST_B3S-1000" H 7550 2700 50  0001 C CNN
+F 3 "~" H 7550 2700 50  0001 C CNN
+	1    7550 2500
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 5F584334
+P 8000 4600
+F 0 "#PWR?" H 8000 4350 50  0001 C CNN
+F 1 "GND" H 8005 4427 50  0000 C CNN
+F 2 "" H 8000 4600 50  0001 C CNN
+F 3 "" H 8000 4600 50  0001 C CNN
+	1    8000 4600
+	1    0    0    -1  
+$EndComp
+$Comp
+L Interface_Expansion:TCA9535DBR U?
+U 1 1 5F58433A
+P 4900 3800
+F 0 "U?" H 4900 5081 50  0000 C CNN
+F 1 "TCA9535DBR" H 4900 4990 50  0000 C CNN
+F 2 "Package_SO:SSOP-24_5.3x8.2mm_P0.65mm" H 5950 2800 50  0001 C CNN
+F 3 "http://www.ti.com/lit/ds/symlink/tca9535.pdf" H 4400 4700 50  0001 C CNN
+	1    4900 3800
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5600 3100 7250 3100
+Wire Wire Line
+	7250 3100 7250 3500
+Wire Wire Line
+	7250 3500 7350 3500
+Wire Wire Line
+	5600 3200 7150 3200
+Wire Wire Line
+	7150 3200 7150 4000
+Wire Wire Line
+	7150 4000 7350 4000
+Wire Wire Line
+	7050 3300 7050 4500
+Wire Wire Line
+	7050 4500 7350 4500
+Wire Wire Line
+	8000 4600 8000 4500
+Wire Wire Line
+	8000 3000 7750 3000
+Wire Wire Line
+	7350 2500 7000 2500
+Wire Wire Line
+	7750 3500 8000 3500
+Connection ~ 8000 3500
+Wire Wire Line
+	7750 4000 8000 4000
+Connection ~ 8000 4000
+Wire Wire Line
+	8000 4000 8000 3500
+Wire Wire Line
+	7750 4500 8000 4500
+Connection ~ 8000 4500
+Wire Wire Line
+	8000 4500 8000 4000
+$Comp
+L Connector:Conn_01x25_Female J?
+U 1 1 5F584353
+P 3600 3150
+AR Path="/5F584353" Ref="J?"  Part="1" 
+AR Path="/5F576C8B/5F584353" Ref="J?"  Part="1" 
+F 0 "J?" H 3628 3176 50  0000 L CNN
+F 1 "Conn_01x25_Female" H 3628 3085 50  0000 L CNN
+F 2 "" H 3600 3150 50  0001 C CNN
+F 3 "~" H 3600 3150 50  0001 C CNN
+	1    3600 3150
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5600 3000 7350 3000
+Wire Wire Line
+	5600 3300 7050 3300
+Wire Wire Line
+	8000 3500 8000 3000
+$EndSCHEMATC
